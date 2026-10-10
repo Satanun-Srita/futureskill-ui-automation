@@ -36,7 +36,7 @@ Test-Script-Robot-Framework/
 
 ## ⚙️ Key Concepts & Architecture
 
-#### 1.Common Keywords (keywords/CommonKeywords.robot)
+### 1.Common Keywords (keywords/CommonKeywords.robot)
 เป็นไฟล์ Keyword และเลือกใช้คำสั่งพื้นฐาน Wait Until Keyword Succeeds ของ SeleniumLibrary เพื่อป้องกันไม่ให้เกิดปัญหา Flaky Tests จากการโหลดหน้าเว็บไม่ทัน:
 
 * **Wait until element is ready then click element:** รอจนกว่า Element จะพร้อมใช้งานแล้วจึงคลิก
@@ -47,7 +47,9 @@ Test-Script-Robot-Framework/
 <img src="images/01-CommonKeywords.png" width="650" alt="CommonKeywords">
 </div>
 
-#### 2.Page Keywords (keywords/PageKeywords.robot)
+---
+
+### 2.Page Keywords (keywords/PageKeywords.robot)
 เป็น Keyword เฉพาะของแต่ละหน้า เช่น HomePage, Login และ Register
 
 * **HomePageKeywords.robot**
@@ -73,28 +75,28 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
 
 ---
 
-#### 3.Configuration & Test Data Driven (resources/config.yaml)
+### 3.Configuration & Test Data Driven (resources/config.yaml)
 แยกข้อมูลที่ใช้ทดสอบออกจากสคริปต์เพื่อรองรับ Data-Driven Testing
 
 * **config.yaml**
 นำลิงค์ของเว็บไซต์ที่ทดสอบมาเก็บไว้และใช้ค่า baseUrl แทน
 
 <div align="center">
-<img src="images/05-config.png" width="650" alt="config">
+<img src="images/05-config.png" width="550" alt="config">
 </div>
 
 * **testdata.yaml**
 เก็บข้อมูลบัญชีผู้ใช้งานสำหรับ Login เข้าสู่ระบบและชุดข้อมูลสมัครสมาชิก เช่น อีเมล, ชื่อ-นามสกุล, เบอร์โทรศัพท์ และรหัสผ่าน
 
 <div align="center">
-<img src="images/06-testdata.png" width="650" alt="testdata">
+<img src="images/06-testdata.png" width="550" alt="testdata">
 </div>
 
 ---
 
 ## 🧪 Test Coverage & Scenarios
 
-#### 1.Login Test Suite (testcases/LoginTestcases.robot)
+### 1.Login Test Suite (testcases/LoginTestcases.robot)
 
 * **Pass Case:** As a user, I want to login success with valid credential
 
@@ -117,7 +119,7 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
 
 ---
 
-#### 2.Registration Test Suite (testcases/RegisterTestcases.robot)
+### 2.Registration Test Suite (testcases/RegisterTestcases.robot)
 
 * **Pass Case:** User Should Be Able To Register From Home Page Successfully
 
@@ -134,7 +136,7 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
 
 ## 🚀 How to Run the Tests
 
-#### 1.Prerequisites & Installation
+### 1.Prerequisites & Installation
 เปิด Terminal / Command Prompt แล้วทำการติดตั้ง Library ที่จำเป็น
 
 #### ติดตั้ง Robot Framework และ SeleniumLibrary
@@ -147,7 +149,7 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
 
 ---
 
-#### 2. Run Test Suites
+### 2. Run Test Suites
 สามารถเลือกคำสั่งรัน Test Suite และกำหนดโฟลเดอร์สำหรับเก็บผลลัพธ์ (Report/Log) ได้ดังนี้
 
 #### ชุดคำสั่งการทดสอบหน้า Login
