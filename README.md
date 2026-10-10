@@ -44,7 +44,7 @@ Test-Script-Robot-Framework/
 * **Wait until page contains element then verify text:** ตรวจสอบข้อความบนหน้าเว็บตามที่คาดหวัง
 
 <div align="center">
-<img src="images/01-CommonKeywords.png" width="750" alt="CommonKeywords">
+<img src="images/01-CommonKeywords.png" width="650" alt="CommonKeywords">
 </div>
 
 #### 2.Page Keywords (keywords/PageKeywords.robot)
@@ -54,21 +54,21 @@ Test-Script-Robot-Framework/
 HomePageKeywords.robot: ตรวจสอบการแสดงผลหน้าแรก และฟังก์ชันการออกจากระบบ (Logout)
 
 <div align="center">
-<img src="images/02-HomePageKeywords.png" width="750" alt="HomePageKeywords">
+<img src="images/02-HomePageKeywords.png" width="650" alt="HomePageKeywords">
 </div>
 
 * **LoginPageKeywords.robot**
 LoginPageKeywords.robot: ขั้นตอนการกดปุ่มเข้าสู่ระบบ, กรอก Username/Password และตรวจสอบความถูกต้องของ Error Message
 
 <div align="center">
-<img src="images/03-LoginPageKeywords.png" width="750" alt="LoginPageKeywords">
+<img src="images/03-LoginPageKeywords.png" width="650" alt="LoginPageKeywords">
 </div>
 
 * **RegisterPageKeywords.robot**
 RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์มสมัครสมาชิก และ Keyword ในการกรอกข้อมูลสมัครสมาชิก รวมถึงการยืนยันข้อความ OTP
 
 <div align="center">
-<img src="images/04-RegisterPageKeywords.png" width="750" alt="RegisterPageKeywords">
+<img src="images/04-RegisterPageKeywords.png" width="650" alt="RegisterPageKeywords">
 </div>
 
 ---
@@ -80,14 +80,14 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
 นำลิงค์ของเว็บไซต์ที่ทดสอบมาเก็บไว้และใช้ค่า baseUrl แทน
 
 <div align="center">
-<img src="images/05-config.png" width="750" alt="config">
+<img src="images/05-config.png" width="650" alt="config">
 </div>
 
 * **testdata.yaml**
 เก็บข้อมูลบัญชีผู้ใช้งานสำหรับ Login เข้าสู่ระบบและชุดข้อมูลสมัครสมาชิก เช่น อีเมล, ชื่อ-นามสกุล, เบอร์โทรศัพท์ และรหัสผ่าน
 
 <div align="center">
-<img src="images/06-testdata.png" width="750" alt="testdata">
+<img src="images/06-testdata.png" width="650" alt="testdata">
 </div>
 
 ---
@@ -103,7 +103,7 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
    * ทำการ Logout เมื่อจบการทดสอบ
 
 <div align="center">
-<img src="images/07-login-success-with-valid-credential.png" width="750" alt="login-success-with-valid-credential">
+<img src="images/07-login-success-with-valid-credential.png" width="650" alt="login-success-with-valid-credential">
 </div>
 
 * **Fail Case:** As a user, I fail to login with invalid credential
@@ -112,7 +112,7 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
    * ตรวจสอบว่าระบบแสดงข้อความแจ้งเตือนความผิดพลาด เช่น "กรอกรหัสผ่านไม่ถูกต้อง"
 
 <div align="center">
-<img src="images/08-login-with-invalid-credential.png" width="750" alt="login-with-invalid-credential">
+<img src="images/08-login-with-invalid-credential.png" width="650" alt="login-with-invalid-credential">
 </div>
 
 ---
@@ -127,7 +127,7 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
    * ตรวจสอบข้อความแจ้งเตือนหน้า OTP "ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"
 
 <div align="center">
-<img src="images/09-RegisterTestcases.png" width="750" alt="RegisterTestcases">
+<img src="images/09-RegisterTestcases.png" width="650" alt="RegisterTestcases">
 </div>
 
 ---
