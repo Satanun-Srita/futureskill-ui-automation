@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Resource    ../keywords/CommonKeywords.robot
 Resource    ../keywords/RegisterPageKeywords.robot
 Variables   ../resources/config/config.yaml
 Variables   ../resources/testdata/testdata.yaml

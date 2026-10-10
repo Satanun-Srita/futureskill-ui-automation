@@ -1,5 +1,6 @@
 *** Settings ***
 Library         SeleniumLibrary
+Resource        ../keywords/CommonKeywords.robot
 Resource        ../keywords/LoginPageKeywords.robot
 Resource        ../keywords/HomePageKeywords.robot
 Variables       ../resources/config/config.yaml
