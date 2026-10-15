@@ -166,14 +166,63 @@ RegisterPageKeywords.robot: รวบรวม Locators ของฟอร์ม
 
 ---
 
-## 📊 Test Reports & Screenshots
-หลังจากรันสคริปต์การทดสอบเสร็จสิ้น Robot Framework จะสร้างไฟล์สรุปผลและภาพบันทึกหน้าจอโดยอัตโนมัติ โดยระบบจะทำการจัดเก็บไฟล์แยกตามโฟลเดอร์โมดูล ดังนี้
+## 📊 Test Reports, Logs & Screenshots
+หลังจากรันสคริปต์การทดสอบเสร็จสิ้น Robot Framework จะสร้างไฟล์ Report, Log และภาพบันทึกหน้าจอโดยอัตโนมัติ เพื่อใช้เป็นหลักฐานและช่วยในการวิเคราะห์ข้อผิดพลาด ได้ดังนี้
 
-### ผลการทดสอบ
-#### 1.หน้า Login (results/Login/)
+### Login Suite
 
+### 1.Test Report
+แสดงผลการทดสอบของ "หน้าเข้าสู่ระบบ" (Dashboard Summary) โดยแสดงสถิติจำนวนเทสเคสทั้งหมด, สถานะความสำเร็จ (Pass/Fail/Skip), ระยะเวลาที่ใช้ในการรัน (Elapsed Time) เพื่อใช้ตรวจสอบสถานะภาพรวมได้อย่างชัดเจน
 
+<div align="center">
+<img src="results/Login/01-LoginTestcases-Report.png" width="650" alt="LoginTestcases-Report">
+</div>
 
-#### 2.หน้า Register (results/Register/)
+---
 
+### 2.Execution Log 
+บันทึกรายละเอียดการทำงานเชิงลึกแบบ Step-by-Step โดยแสดงลำดับการทำงานของ Suite, Setup, Test Cases, Keywords ย่อย ตลอดจนเวลาเริ่มต้น-สิ้นสุดของแต่ละขั้นตอน ช่วยให้ QA สามารถตรวจสอบ และวิเคราะห์จุดที่เกิดข้อผิดพลาดได้อย่างรวดเร็ว
 
+<div align="center">
+<img src="results/Login/02-LoginTestcases-Log.png" width="650" alt="LoginTestcases-Log">
+</div>
+
+---
+
+### 3.Automated Screenshots
+บันทึกภาพหน้าจออัตโนมัติจาก Browser โดยใช้เป็นหลักฐานยืนยันการทำงานในแต่ละขั้นตอนสำคัญ (Step Verification) หรือใช้จับภาพหน้าจอทันทีเมื่อเกิดข้อผิดพลาด (Capture on Failure) เพื่อประกอบการทำ Bug Report ให้ทีม Developer แก้ไขได้ทันที
+
+<div align="center">
+<img src="results/Login/03-selenium-screenshot.png" width="650" alt="selenium-screenshot">
+</div>
+
+---
+
+### Register Suite
+
+### 1.Test Report
+แสดงผลการทดสอบของ "หน้าสมัครสมาชิก" (Dashboard Summary) โดยแสดงสถิติจำนวนเทสเคสทั้งหมด, สถานะความสำเร็จ (Pass/Fail/Skip), ระยะเวลาที่ใช้ในการรัน (Elapsed Time) เพื่อใช้ตรวจสอบสถานะภาพรวมได้อย่างชัดเจน
+
+<div align="center">
+<img src="results/Register/01-RegisterTestcases-Report.png" width="650" alt="RegisterTestcases-Report">
+</div>
+
+---
+
+### 2.Execution Log
+บันทึกรายละเอียดการทำงานเชิงลึกแบบ Step-by-Step โดยแสดงการทำงานตั้งแต่การเปิดเบราว์เซอร์, การรัน Keyword แต่ละขั้นตอน เช่น การกดปุ่มสมัครสมาชิก, การกรอกข้อมูลแบบฟอร์ม, การกดยืนยันและตรวจสอบข้อความ OTP (Verify OTP Message) พร้อมระบุเวลาที่ใช้ในแต่ละ Keyword ได้อย่างชัดเจน
+
+<div align="center">
+<img src="results/Register/02-RegisterTestcases-Log.png" width="650" alt="RegisterTestcases-Log">
+</div>
+
+---
+
+### 3.Automated Screenshots
+จับภาพหน้าจอระบบจริงอัตโนมัติขณะสคริปต์กำลังทำงานผ่าน Browser ใช้เป็นหลักฐานยืนยันว่าระบบได้ทำการกรอกข้อมูลการสมัครสมาชิก (อีเมล, ชื่อ-นามสกุล, เบอร์โทรศัพท์, รหัสผ่าน) และติ๊กยอมรับเงื่อนไขเรียบร้อยแล้ว โดยสามารถย้อนกลับมาตรวจสอบความถูกต้องของ UI หรือนำไปประกอบการทำ Bug Report ได้ทันที
+
+<div align="center">
+<img src="results/Register/03-selenium-screenshot.png" width="650" alt="selenium-screenshot">
+</div>
+
+---
